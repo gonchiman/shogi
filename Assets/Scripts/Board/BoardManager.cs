@@ -18,7 +18,9 @@ public class BoardManager : MonoBehaviour
             {
                 GameObject tile = GameObject.CreatePrimitive(PrimitiveType.Quad);
 
-                tile.name = $"Tile ({x}, {y})";
+                Tile tileComponent = tile.AddComponent<Tile>();
+                tileComponent.Initialize(x, y);
+
                 tile.transform.position = new Vector3(x * tileSize, y * tileSize, 0);
                 tile.transform.localScale = new Vector3(tileSize, tileSize, 1);
 

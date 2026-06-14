@@ -1,0 +1,43 @@
+Assets
+├─ Scenes
+│  └─ MainScene.unity
+│
+├─ Scripts
+│  ├─ Board
+│  │  ├─ BoardManager.cs
+│  │  └─ Tile.cs
+│  │
+│  ├─ Pieces
+│  │  ├─ Piece.cs
+│  │  ├─ PieceType.cs
+│  │  └─ PieceMovement.cs
+│  │
+│  ├─ Game
+│  │  ├─ GameManager.cs
+│  │  └─ TurnManager.cs
+│  │
+│  └─ Input
+│     └─ InputManager.cs
+│
+├─ Prefabs
+│  ├─ Tile.prefab
+│  └─ Pieces
+│     ├─ Pawn.prefab
+│     ├─ King.prefab
+│     ├─ Gold.prefab
+│     ├─ Silver.prefab
+│     ├─ Knight.prefab
+│     ├─ Lance.prefab
+│     ├─ Bishop.prefab
+│     └─ Rook.prefab
+│
+├─ Sprites
+│  ├─ Board
+│  └─ Pieces
+│
+├─ Materials
+│  └─ BoardMaterials
+│
+└─ UI
+   ├─ Fonts
+   └─ Images
