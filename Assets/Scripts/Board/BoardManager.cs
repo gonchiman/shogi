@@ -24,14 +24,18 @@ public class BoardManager : MonoBehaviour
 
                 Renderer renderer = tile.GetComponent<Renderer>();
 
+                Material material = new Material(Shader.Find("Universal Render Pipeline/Unlit"));
+
                 if ((x + y) % 2 == 0)
                 {
-                    renderer.material.color = new Color(0.9f, 0.75f, 0.45f);
+                    material.color = new Color(0.9f, 0.75f, 0.45f);
                 }
                 else
                 {
-                    renderer.material.color = new Color(0.8f, 0.6f, 0.3f);
+                    material.color = new Color(0.75f, 0.5f, 0.25f);
                 }
+
+                renderer.material = material;
             }
         }
     }
